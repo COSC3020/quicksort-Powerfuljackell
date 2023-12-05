@@ -14,3 +14,9 @@ recursive call considers.
 Analyse the time complexity of your implementation and give a $\Theta$ bound for
 its worst-case runtime. Add your answer, including your reasoning, to this
 markdown file.
+
+Going through the code and piecing it out (see comments on code), I have come to the conclusion
+that a $\Theta$ bound for its worst-case runtime is O(n^2), with the average being nlogn. This is
+because there is a function with a time complexity of n and a logorithmic loop within the primary
+function, however, if that logorithmic loop reaches its worst case it has a complexity of n
+resulting in n*n complexity.
